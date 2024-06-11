@@ -1,0 +1,177 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define global styles and layout */
+header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 2rem;
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Add this line to set a semi-transparent background */
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; /* Ensure the navigation bar is above the video */
+    background: rgba(0, 0, 0, 0.6); /* Adjust background transparency as needed */
+}
+
+.video-container {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#h1 {
+    font-size: 2rem;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation bar styles */
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar a:hover {
+    color: rgb(243, 206, 206);
+    transition: 0.3s ease-in;
+}
+
+/* Place and package card styles */
+.place-card, .package-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    width: 70%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.place-card img, .package-card img {
+    width: 75%;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.place-card h3, .package-card h3 {
+    margin: auto;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.place-card p, .package-card p {
+    color: #666;
+    margin: auto;
+    width: 40%;
+}
+
+.place-card a, .package-card a {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Video section styles */
+.video-container {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    z-index: 0;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Feedback form styles */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+.end {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}

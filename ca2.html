@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel ="stylesheet" href="ca2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Photography Club</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://alumni.lpu.in/gallery">Home</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Lovely_Professional_University">About</a></li>
+                <li><a href="https://www.universitydunia.com/institute/1209-lovely-professional-university-lpu/contact-details">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="logo.jpg" alt="Campus Photography Club Logo">
+    </header>
+
+    <main>
+        <section id="about">
+            <article>
+                <h2>About Us</h2>
+                <p>Welcome to the LPU Photography Club! We are a passionate group of photographers dedicated to capturing the beauty of our campus.</p>
+            </article>
+            <figure>
+                <img src="club-photo.jpg" alt="Campus Photography Club">
+                <figcaption>Campus Photography Club</figcaption>
+            </figure>
+            <form action="submit.php" method="post">
+                <fieldset>
+                    <legend>Registration Form</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" required>
+                    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="year">Year of Study:</label>
+                    <input type="radio" id="freshman" name="year" value="freshman" required>
+                    <label for="freshman">Freshman</label>
+                    <input type="radio" id="sophomore" name="year" value="sophomore" required>
+                    <label for="sophomore">Sophomore</label>
+                    <input type="radio" id="senior" name="year" value="senior" required>
+                    <label for="senior">Senior</label>
+                    
+                    <label for="experience">Photography Experience Level:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    
+                    <label>Camera Type:</label>
+                    <input type="checkbox" id="dslr" name="cameraType[]" value="dslr" required>
+                    <label for="dslr">DSLR</label>
+                    <input type="checkbox" id="mirrorless" name="cameraType[]" value="mirrorless" required>
+                    <label for="mirrorless">Mirrorless</label>
+                    <input type="checkbox" id="smartphone" name="cameraType[]" value="smartphone" required>
+                    <label for="smartphone">Smartphone</label>
+                    
+                    <label for="joinReason">Why do you want to join our club?</label>
+                    <textarea id="joinReason" name="joinReason" rows="4" required></textarea>
+                    
+                    <label for="samplePhoto">Upload a Sample Photo:</label>
+                    <input type="file" id="samplePhoto" name="samplePhoto" accept="image/*" required>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Contact us at: <a href="mailto:contact@photoclub.com">contact@lpuphotographyclub.com</a>
+        </address>
+    </footer>
+</body>
+</html>

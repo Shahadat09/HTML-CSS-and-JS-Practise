@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <style>
+      body {
+        background-color: lightcoral;
+      }
+      h1::after {
+        content: "";
+        position: center;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0%;
+        background-color: blueviolet;
+        transition: width 1s ease;
+      }
+
+      h1:hover::after {
+        width: 100%;
+      }
+      h1{
+        background-color: rgb(51, 172, 105);
+      }
+      .container {
+        position: center;
+        }
+        /* table style */
+        table {
+          border-collapse: collapse;
+          /* text color */
+                    color:brown;*/
+                    /*  */
+                    
+
+          }
+    </style>
+    <header>
+      <h1><u>Let's Explore</u></h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+    </nav>
+    <main>
+      <section id="home">
+        <h2>Welcome to our travel website!</h2>
+        <p>
+          We offer information on a variety of travel destinations, including
+          descriptions, images, and travel tips.
+        </p>
+        <p>To learn more about a destination, click on its link below.</p>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Paris">Paris</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/New_York_(state)">New York City</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Tokyo">Tokyo</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/London">London</a></li>
+        </ul>
+      </section>
+      <section id="destinations">
+        <h2>Destinations</h2>
+        <ul>
+          <li id="paris">
+            <h3>Paris</h3>
+            <img src="/paris.jpg" alt="Paris" height="500px" width="500px" />
+            <p>
+              Paris is the capital of France and one of the most popular tourist
+              destinations in the world. It is known for its iconic landmarks,
+              such as the Eiffel Tower and the Louvre Museum.
+            </p>
+            <p>
+              Paris is also a great city for food lovers, with a wide variety of
+              restaurants to choose from.
+            </p>
+          </li>
+          <li id="new-york">
+            <h3>New York City</h3>
+            <img
+              src="/new-york.jpg"
+              alt="New York City"
+              height="500px"
+              width="500px"
+            />
+            <p>
+              New York City is the most populous city in the United States and
+              one of the most iconic cities in the world. It is known for its
+              skyscrapers, Broadway shows, and Central Park.
+            </p>
+            <p>
+              New York City is also a great city for shopping, with a wide
+              variety of stores to choose from.
+            </p>
+          </li>
+          <li id="tokyo">
+            <h3>Tokyo</h3>
+            <img src="/tokyo.jpg" alt="Tokyo" height="500px" width="500px" />
+            <p>
+              Tokyo is the capital of Japan and one of the most populous cities
+              in the world. It is known for its neon lights, ramen restaurants,
+              and sumo wrestling.
+            </p>
+            <p>
+              Tokyo is also a great city for technology lovers, with a wide
+              variety of electronics stores to choose from.
+            </p>
+          </li>
+          <li id="london">
+            <h3>London</h3>
+            <img src="/london.jpg" alt="London" height="500px" width="500px" />
+            <p>
+              London is the capital of England and one of the most popular
+              tourist destinations in Europe. It is known for its iconic
+              landmarks, such as Big Ben and Buckingham Palace.
+            </p>
+            <p>
+              London is also a great city for history lovers, with a wide
+              variety of museums and historical sites to visit.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2023 Travel Website</p>
+    </footer>
+    <table>
+      <thead>
+        <tr>
+          <th>Destination name</th>
+          <th>Cost (per day)</th>
+          <th>Weather</th>
+          <th>Activities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Paris</td>
+          <td>\$100</td>
+          <td>50°F/10°C, sunny</td>
+          <td>Eiffel Tower, Louvre Museum, Notre Dame Cathedral</td>
+        </tr>
+        <tr>
+          <td>Rome</td>
+          <td>\$80</td>
+          <td>70°F/21°C, partly cloudy</td>
+          <td>Colosseum, Roman Forum, Trevi Fountain</td>
+        </tr>
+        <tr>
+          <td>Barcelona</td>
+          <td>\$70</td>
+          <td>65°F/18°C, rainy</td>
+          <td>Sagrada Familia, Park Güell, La Rambla</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </body>
+</html>

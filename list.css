@@ -1,0 +1,11 @@
+body{
+    background-color: White;
+    /* border-style :dotted; */
+    /* border:50px solid green */
+
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

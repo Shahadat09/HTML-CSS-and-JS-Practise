@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seating Chart and Task List</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul ul {
+    margin-left: 20px;
+  }
+  ul ul ul {
+    margin-left: 40px;
+  }
+  ul ul ul ul {
+    margin-left: 60px;
+  }
+</style>
+</head>
+<body>
+  <h1>Seating Chart</h1>
+  <table>
+    <tr>
+      <th>Row / Seat</th>
+      <th>Seat 1</th>
+      <th>Seat 2</th>
+      <th>Seat 3</th>
+      <!-- Add more seat columns as needed -->
+    </tr>
+    <tr>
+      <td>Row A</td>
+      <td>Person 1</td>
+      <td>Person 2</td>
+      <td>Person 3</td>
+    </tr>
+    <tr>
+      <td>Row B</td>
+      <td>Person 4</td>
+      <td>Person 5</td>
+      <td>Person 6</td>
+    </tr>
+  </table>
+
+  <h1>Task List</h1>
+  <ul>
+    <li>Main Task 1
+      <ul>
+        <li>Subtask 1.1</li>
+        <li>Subtask 1.2
+          <ul>
+            <li>Subtask 1.2.1</li>
+            <li>Subtask 1.2.2
+              <ul>
+                <li>Subtask 1.2.2.1</li>
+                <li>Subtask 1.2.2.2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Main Task 2</li>
+    <li>Main Task 3
+      <ul>
+        <li>Subtask 3.1</li>
+      </ul>
+    </li>
+    <li>Main Task 4</li>
+  </ul>
+</body>
+</html>

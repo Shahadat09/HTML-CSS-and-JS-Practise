@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .menu-item img {
+      max-width: 100px;
+      max-height: 80px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+
+    .menu-item-description {
+      flex: 1;
+    }
+
+    .menu-item-price {
+      color: #e44d26;
+    }
+
+    .table-section {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .review-section {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .table-section h2,
+    .review-section h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Restaurant Name</h1>
+    <p>Delighting taste buds since...</p>
+  </header>
+
+  <section id="appetizers">
+    <h2>Appetizers</h2>
+    <div class="menu-item">
+      <img src="thali.jpeg" alt="Appetizer 1">
+      <div class="menu-item-description">
+        <h3>Appetizer 1</h3>
+        <p>Description of the appetizer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="menu-item-price">$10.99</div>
+    </div>
+
+    <!-- Repeat similar blocks for other appetizers -->
+
+  </section>
+
+  <section id="entrees">
+    <h2>Entrees</h2>
+    <!-- Repeat similar blocks for entrees -->
+  </section>
+
+  <section id="desserts">
+    <h2>Desserts</h2>
+    <!-- Repeat similar blocks for desserts -->
+  </section>
+
+  <section id="beverages">
+    <h2>Beverages</h2>
+    <!-- Repeat similar blocks for beverages -->
+  </section>
+
+  <section class="table-section">
+    <h2>Reserve a Table</h2>
+    <p>Contact us to reserve a table and experience the best dining atmosphere.</p>
+    <p>Contact: <strong>yourrestaurant@email.com</strong></p>
+  </section>
+
+  <section class="review-section">
+    <h2>Customer Reviews</h2>
+    <!-- Display customer reviews -->
+  </section>
+</body>
+</html>

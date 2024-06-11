@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Background Color</title>
+<style>
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    padding: 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+  }
+</style>
+</head>
+<body>
+
+<div class="container" onmouseenter="changeColorToRed()" onmouseleave="restoreColor()">
+  <h2>Press here to color change!</h2>
+</div>
+
+<script>
+  function changeColorToRed() {
+    document.querySelector('.container').style.backgroundColor = 'red';
+  }
+
+  function restoreColor() {
+    document.querySelector('.container').style.backgroundColor = 'skyblue';
+  }
+</script>
+
+</body>
+</html>
